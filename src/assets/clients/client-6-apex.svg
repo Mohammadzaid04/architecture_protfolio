@@ -1,0 +1,5 @@
+<!-- EDIT: Client brand mark SVG -->
+<svg viewBox="0 0 160 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="12,36 24,12 36,36 24,28" fill="currentColor"/>
+  <text x="48" y="30" font-family="sans-serif" font-weight="600" font-size="16" letter-spacing="3">APEX</text>
+</svg>

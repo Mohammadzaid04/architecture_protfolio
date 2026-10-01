@@ -1,0 +1,5 @@
+<!-- EDIT: Client brand mark SVG -->
+<svg viewBox="0 0 160 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="16,36 28,12 40,36" fill="none" stroke="currentColor" stroke-width="4"/>
+  <text x="50" y="30" font-family="sans-serif" font-weight="600" font-size="16" letter-spacing="3">NORDIC</text>
+</svg>

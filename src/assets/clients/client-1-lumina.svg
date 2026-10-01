@@ -1,0 +1,5 @@
+<!-- EDIT: Client brand mark SVG -->
+<svg viewBox="0 0 160 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 10h6v28H12z M24 32h14v6H24z" />
+  <text x="50" y="30" font-family="sans-serif" font-weight="600" font-size="16" letter-spacing="3">LUMINA</text>
+</svg>
