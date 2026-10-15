@@ -109,6 +109,8 @@ export interface SiteConfig {
   mapEmbedUrl: string;
   /** Direct WhatsApp contact phone number */
   whatsappNumber: string;
+  // EDIT: Dedicated recruitment and careers email address (optional, falls back to general email)
+  careersEmail?: string;
   /** Social media platform URLs */
   socialLinks: SocialLinks;
 }

@@ -3,6 +3,8 @@
  * Developers call this function on page mounts to update document title and description.
  */
 
+import { siteConfig } from '@/data/siteConfig';
+
 /**
  * Updates document title and meta description tag dynamically.
  *
@@ -10,7 +12,7 @@
  * @param description - Optional meta description content
  */
 export function setDocumentMeta(title: string, description?: string, suffix?: string): void {
-  const brandSuffix = suffix ?? 'Atelier Architecture';
+  const brandSuffix = suffix ?? siteConfig.studioName;
   document.title = title ? `${title} | ${brandSuffix}` : brandSuffix;
 
   if (description) {
