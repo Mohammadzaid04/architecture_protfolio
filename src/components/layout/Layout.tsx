@@ -8,7 +8,7 @@
  */
 import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from './Navbar';
-import { Footer } from './Footer';
+import SiteFooter from '@/components/SiteFooter';
 import { ScrollToTop } from './ScrollToTop';
 import { SkipLink } from '@/components/common/SkipLink';
 
@@ -39,7 +39,7 @@ export function Layout({ className = '' }: LayoutProps) {
       >
         <Outlet />
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

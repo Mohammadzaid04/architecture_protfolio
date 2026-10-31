@@ -10,6 +10,7 @@
  */
 import type { CSSProperties, MouseEvent } from 'react';
 import BackgroundVideo from '@/components/common/BackgroundVideo';
+import CursorTrail from '@/components/CursorTrail';
 import { homeContent } from '@/data/homeContent';
 
 export function Hero() {
@@ -35,7 +36,11 @@ export function Hero() {
       <BackgroundVideo url={hero.video.url} posterId={hero.poster} posterAlt={hero.posterAlt} />
 
       {/* Multi-tier gradient & base overlay for navbar & headline legibility */}
-      <div className="absolute inset-0 pointer-events-none select-none z-10" aria-hidden="true">
+      <div
+        className="absolute inset-0 pointer-events-none select-none z-[1]"
+        aria-hidden="true"
+        style={{ zIndex: 1 }}
+      >
         <div
           className="absolute inset-0"
           style={{ backgroundColor: 'var(--hero-overlay, rgba(12, 12, 11, 0.32))' }}
@@ -44,11 +49,14 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-40 sm:h-48 bg-gradient-to-t from-dark-bg/80 via-dark-bg/25 to-transparent" />
       </div>
 
-      {/* Top Spacer guaranteeing heading never sits under the fixed navbar */}
-      <div className="pt-24 sm:pt-28 md:pt-32" />
+      {/* Interactive cursor trail over cinematic video */}
+      <CursorTrail />
 
       {/* Central Headline Entrance with editorial staggered reveal */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
+      <div
+        className="relative z-[3] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto pt-20 sm:pt-24"
+        style={{ zIndex: 3 }}
+      >
         <div className="max-w-4xl space-y-6">
           {/* A. Small metadata line */}
           <p
@@ -97,7 +105,10 @@ export function Hero() {
       </div>
 
       {/* D. Bottom Architectural Metadata Bar & Scroll Cue (Staggered Step D) */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-8 sm:pb-12">
+      <div
+        className="relative z-[3] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-8 sm:pb-12"
+        style={{ zIndex: 3 }}
+      >
         <div
           className="reveal-up border-t border-white/20 pt-4 flex items-center justify-between text-small text-white/75"
           style={

@@ -9,7 +9,7 @@ import { CinematicBand } from './CinematicBand';
 import { Services } from './Services';
 import { SelectedProject } from './SelectedProject';
 import { Clients } from './Clients';
-import { Cta } from './Cta';
+import CtaSection from '@/components/CtaSection';
 
 /**
  * High-performance architectural studio homepage view.
@@ -24,7 +24,7 @@ export function Home() {
       <Services />
       <SelectedProject />
       <Clients />
-      <Cta />
+      <CtaSection />
     </div>
   );
 }

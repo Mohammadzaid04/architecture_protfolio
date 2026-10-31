@@ -21,7 +21,7 @@ import { Process } from './Process';
 import { Numbers } from './Numbers';
 import { Team } from './Team';
 import { AwardsPublications } from './AwardsPublications';
-import { Cta } from '@/pages/Home/Cta';
+import CtaSection from '@/components/CtaSection';
 
 export function About() {
   // Set document title and SEO meta description
@@ -69,7 +69,7 @@ export function About() {
       <AwardsPublications awards={aboutContent.awards} publications={aboutContent.publications} />
 
       {/* 9. Closing Dark Tone Call to Action */}
-      <Cta />
+      <CtaSection />
     </article>
   );
 }
